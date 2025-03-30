@@ -2,7 +2,7 @@
 	import { Plus } from '@lucide/svelte';
 </script>
 
-<aside class="flex w-full max-w-xs flex-col gap-8 rounded bg-neutral-900 p-4">
+<aside class="flex w-full max-w-xs flex-col gap-8 rounded-md bg-neutral-900 p-4">
 	<ul class="flex items-center justify-between gap-4">
 		<li><a href="/"><img src="/favicon.ico" alt="icon" class="size-8" /></a></li>
 		<li>
