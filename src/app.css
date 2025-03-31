@@ -1,2 +1,22 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+   font-family: Robit;
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url("/font/Robit-Regular.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: Robit;
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url("/font/Robit-Bold.woff2") format("woff2");
+}
+
+@theme {
+   --font-robit: "Robit", "sans-serif";
+}
