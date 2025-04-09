@@ -1,8 +1,8 @@
 export default function Home() {
-   return (
-      <main className="flex p-4 gap-4 min-h-dvh">
-         <aside className="max-w-xs w-full rounded-md bg-neutral-900 p-4"></aside>
-         <div className=""></div>
-      </main>
-   );
+  return (
+    <main className="flex min-h-dvh gap-4 p-4">
+      <aside className="w-full max-w-xs rounded-md bg-neutral-900 p-4"></aside>
+      <div className=""></div>
+    </main>
+  );
 }
