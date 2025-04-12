@@ -1,5 +1,6 @@
-import { Plus } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import AddTask from "./AddTask";
+import Profile from "./Profile";
 
 export default function Sidebar() {
   return (
@@ -10,14 +11,13 @@ export default function Sidebar() {
       >
         <img src="../favicon.ico" alt="logo" className="size-8" />
       </Link>
-      <ul className="flex flex-col gap-8">
+      <ul className="flex flex-col gap-2">
         <li>
-          <button className="flex w-full items-center justify-between gap-2 rounded-md bg-neutral-800/40 p-4 text-neutral-300/40 transition-colors duration-300 hover:bg-neutral-800/60 hover:text-neutral-300">
-            <span className="leading-none font-bold uppercase">add habit</span>
-            <Plus className="size-4" weight="bold" />
-          </button>
+          <AddTask />
         </li>
-        <li></li>
+        <li>
+          <Profile />
+        </li>
       </ul>
     </aside>
   );

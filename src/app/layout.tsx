@@ -2,19 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const robit = localFont({
-  src: [
-    {
-      path: "../font/Robit-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../font/Robit-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+const pitagon = localFont({
+  src: "../font/PitagonSansMono.woff2",
+  style: "normal",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robit.className} bg-neutral-950 text-neutral-200 antialiased`}
+        className={`${pitagon.className} bg-neutral-950 tracking-wide text-neutral-200 antialiased`}
       >
         {children}
       </body>
